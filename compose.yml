@@ -31,6 +31,7 @@ services:
       - mynetwork
     depends_on:
       - db
+ 
   borrow_service:
     image: sandhyakodamala/pyapp:borrow_img
     deploy:
