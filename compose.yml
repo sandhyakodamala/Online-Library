@@ -1,7 +1,7 @@
 ---
 services:
   db:
-    image: sandhyakodamala/pyapp:db_img2
+    image: sandhyakodamala/pythonapp:db_img
     deploy:
       replicas: 1
     ports:
@@ -10,7 +10,7 @@ services:
       - mynetwork
 
   auth_service:
-    image: sandhyakodamala/pyapp:auth_img
+    image: sandhyakodamala/pythonapp:auth_img
     deploy:
       replicas: 1
     ports:
@@ -22,7 +22,7 @@ services:
     
 
   book_service:
-    image: sandhyakodamala/pyapp:book_img
+    image: sandhyakodamala/pythonapp:book_img
     deploy:
       replicas: 1
     ports:
@@ -33,7 +33,7 @@ services:
       - db
  
   borrow_service:
-    image: sandhyakodamala/pyapp:borrow_img
+    image: sandhyakodamala/pythonapp:borrow_img
     deploy:
       replicas: 1
     ports:
@@ -44,7 +44,7 @@ services:
       - db
 
   frontend:
-    image: sandhyakodamala/pyapp:fe_img
+    image: sandhyakodamala/pythonapp:fe_img
     deploy:
       replicas: 1
     ports:
