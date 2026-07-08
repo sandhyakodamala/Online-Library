@@ -1,7 +1,7 @@
 ---
 services:
   db:
-    image: sandhyakodamala/pyapp:db_image
+    image: sandhyakodamala/pyapp:db_img
     deploy:
       replicas: 1
     ports:
