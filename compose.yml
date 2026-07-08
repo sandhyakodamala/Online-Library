@@ -51,9 +51,9 @@ services:
     networks:
       - mynetwork
     depends_on:
-      - auth
-      - book
-      - borrow
+      - auth_service
+      - book_service
+      - borrow_service
 
 networks:
   mynetwork:
