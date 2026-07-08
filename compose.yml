@@ -1,11 +1,11 @@
 ---
 services:
   db:
-    image: sandhyakodamala/pyapp:db_img
+    image: shaikmustafa/pyapp:db_image
     deploy:
       replicas: 1
     ports:
-      - "3307:3306"
+      - "3306:3306"
     networks:
       - mynetwork
 
